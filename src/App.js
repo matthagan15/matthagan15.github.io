@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import TopBar from './components/TopBar';
 
 function App() {
   return (
     <div className="App">
+      <TopBar />
         <ul class="NavBar"> 
           <li> Home </li>
           <li> Test </li>
@@ -15,14 +17,39 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <ul>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+
+          </ul>
+          
+
       </header>
     </div>
   );
