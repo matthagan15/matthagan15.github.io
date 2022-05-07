@@ -1,23 +1,24 @@
 
-.navbarHeader {
+.navigation {
+  height: 60px;
   width: 100%;
-  min-height: 6vh;
-  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #eee;
-  transition: all .7s ease-in;
-  position: fixed;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: rgb(239, 150, 91);
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
 
-.scrolled{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
+.navigationLink {
+  margin: 5px;
+  margin-left: 20%;
+  padding: 5x;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
-.navigation{
-
+.navigationLink:hover {
+  color: red;
 }

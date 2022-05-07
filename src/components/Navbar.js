@@ -1,23 +1,15 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link , NavLink} from "react-router-dom";
 import "./Navbar.css";
 
 class Navbar extends Component {
     render() {
         return (
-            <div>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/QcircuitBuilder">QCircuit Builder</Link>
-                    </li>
-                </ul>
-            </div>
+            <nav className="navigation">
+                <NavLink to="/" className="navigationLink" >Home</NavLink>
+                <NavLink to="/about" className="navigationLink" > About </NavLink>
+                <NavLink to="/QcircuitBuilder" className="navigationLink" > QCircuit Builder </NavLink>
+            </nav>
         );
     }
 }

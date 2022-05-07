@@ -29,8 +29,5 @@ function About() {
   return <div><Navbar /><h2>About</h2></div>;
 }
 
-function Users() {
-  return <h2>Users</h2>;
-}
 
 export default App;
