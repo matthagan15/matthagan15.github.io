@@ -1,58 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
-import TopBar from './components/TopBar';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Navbar from './components/Navbar';
+import QcircuitBuilder from './components/QcircuitBuilder'
+import Home from './components/Home'
 
 function App() {
   return (
-    <div className="App">
-      <TopBar />
-        <ul class="NavBar"> 
-          <li> Home </li>
-          <li> Test </li>
-          <li> Bag </li>
-        </ul>
-      <header className="App-header">
-
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <ul>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-
-          </ul>
-          
-
-      </header>
+    <div>
+      <Routes>
+        <Route path='/about' element={<About />} />
+        <Route path='/QcircuitBuilder' element={<QcircuitBuilder />} />
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
+
+
   );
+}
+
+
+function About() {
+  return <div><Navbar /><h2>About</h2></div>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
 }
 
 export default App;
