@@ -7,57 +7,13 @@ html {
 }
 
 .root {
-    color: blue;
-    display: flex;
+    width: 100%;
 }
 
-/* table {
-    color: tan;
-} */
 .left_panel {
-    width: 100px;
-    border: 1px solid red;
-    background-color: tan;
+    width: 20%;
 }
 
 .right_panel {
-    width: 100px;
-    padding-left: 80%;
-    margin-top: 0%;
-    margin-bottom: 100%;
-    border: 1px solid red;
-    background-color: tan;
-}
-
-.article1 {
-    color: green;
-    padding-left: 400px;
-}
-
-.article1link {
-    color: cadetblue;
-}
-
-.second_home_page {
-    flex: auto;
-
-}
-
-.article_title {
-    width: 400px;
-}
-
-.col2 {
-    color: rgb(255, 0, 208);
-    padding-left: 0%;
-    width: 300px;
-}
-
-
-
-td {
-    border: 1px solid blue;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    width: 80%;
 }
