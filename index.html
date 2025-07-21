@@ -7,12 +7,9 @@
   <meta name="theme-color" content="#000000" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="stylesheet" type="text/css" href="fonts.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link
-    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"> -->
-
   <link
     href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
@@ -21,29 +18,82 @@
 
 <body class="spectral-light">
   <div class="outermost">
-    <div class="navbar">
-      <div class="navbar_links">
-        <ul class="navbar_list">
-          <li class="navbar_link">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="navbar_link">
-            <a href="papers.html">Papers</a>
-          </li>
-          <li class="navbar_link">
-            <a href="software.html">Software</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <nav class="navbar">
+      <ul class="navbar_list">
+        <li class="navbar_link">
+          <a href="#about">About</a>
+        </li>
+        <li class="navbar_link">
+          <a href="#papers">Papers</a>
+        </li>
+        <li class="navbar_link">
+          <a href="#software">Software</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div id="bio">
+    <section id="about">
+      <h1>About</h1>
       <p>
-        My name is Matthew Hagan, I am a Quantum Computing researcher at the Pacific Northwest National Laboratory. My
+        My name is Matthew Hagan, I am a Quantum Computing Ph.D student at the University of Toronto. My
         research has focused mainly on simulating quantum systems on quantum computers, with some side projects in
         quantum information theory and error correction.
       </p>
-    </div>
+    </section>
+
+    <section id="papers">
+      <h1>Papers</h1>
+      <p>
+        Below are the papers I have contributed to in reverse chronological order.
+      </p>
+      <ol>
+        <li>
+          <a href="https://arxiv.org/abs/2505.00642">Interpreting Multipartite Entanglement through Topological
+            Summaries</a>
+          <p>This paper explores how homological quantities derived from entanglement metrics can be used to classify
+            ground states of error correcting codes and graph states.</p>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2502.03410">The Thermodynamic Cost of Ignorance</a>
+          <p>
+            This paper expands upon previous models of thermalization used to prepare quantum thermal states to work for
+            arbitrary systems and temperatures.
+          </p>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2306.16572">Composite qdrift-product formulas for quantum and classical
+            simulations in real and imaginary time</a>
+          <p>This paper extends previously developed composite or partially randomized simulation methods to imaginary
+            time. This makes it a useful algorithm for classical Monte Carlo algorithms, which are traditionally based
+            on Trotter-Suzuki formulas.</p>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2206.06409v3">Composite Quantum Simulations</a>
+          <p>This paper combined randomized simulation techniques (QDrift) with deterministic techniques (Trotter
+            formulas) to reduce simulation costs for certain classes of Hamiltonians.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="software">
+      <h1>Software</h1>
+      <p>
+        I've been working on learning how to write software since I first tried to develop ROMs for my slow ass android
+        phone when I was a teen. This page is a great example that time spent doing something is not the only important
+        metric and the quality of time spent practicing is just as important; as I only have the following packages that
+        are worth sharing with others. All libraries are in rust unless specified otherwise.
+      <ul id="software_libraries">
+        <li> <a href="https://github.com/matthagan15/mhgl">(MHGL)</a> Matt's HyperGraph Library - A library for working
+          with undirected hypergraphs that can compute boundaries, links, stars, and skeletons. Working on adding
+          homology algorithms and a simplex-tree datastructure. </li>
+        <li>SPARFF - Work in progress sparse linear algebra library over finite fields.</li>
+        <li><a href="https://github.com/matthagan15/hdx_codec">HDX_CODEC</a> - Library developed to explore the error
+          correcting codes developed in <a href="https://arxiv.org/pdf/2308.15563">New Codes on High Dimensional
+            Expanders</a> and possible quantum
+          counterparts.</li>
+      </ul>
+      </p>
+    </section>
   </div>
 </body>
 
