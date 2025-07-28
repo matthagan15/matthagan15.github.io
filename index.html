@@ -21,16 +21,22 @@
     <nav class="navbar">
       <ul class="navbar_list">
         <li class="navbar_link">
-          <a href="#about">About</a>
+          <a href="#about" class="navbar_a">About</a>
         </li>
         <li class="navbar_link">
-          <a href="#papers">Papers</a>
+          <a href="#papers" class="navbar_a">Papers</a>
         </li>
         <li class="navbar_link">
-          <a href="#software">Software</a>
+          <a href="#software" class="navbar_a">Software</a>
         </li>
         <li class="navbar_link">
-          <a href="matthew_hagan_cv.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?user=abU3YEcAAAAJ&hl=en" class="navbar_a">Google Scholar</a>
+        </li>
+        <li class="navbar_link">
+          <a href="https://github.com/matthagan15/" class="navbar_a">Github</a>
+        </li>
+        <li class="navbar_link">
+          <a href="matthew_hagan_cv.pdf" class="navbar_a">CV</a>
         </li>
       </ul>
     </nav>
@@ -44,7 +50,8 @@
         My name is Matthew Hagan, I study Quantum Computing as a Ph.D student at the University of Toronto with Nathan
         Wiebe. My
         research has focused mainly on simulating quantum systems on quantum computers, with some side projects in
-        quantum information theory and error correction.
+        quantum information theory and error correction. Prior to my phd I worked at Sonos as an embedded systems
+        engineer and studied Physics (Course 8) and Math w/ Computer Science (Course 18C) at MIT.
       </p>
 
     </section>
@@ -58,27 +65,39 @@
         <li>
           <a href="https://arxiv.org/abs/2505.00642">Interpreting Multipartite Entanglement through Topological
             Summaries</a>
-          <p>This paper explores how homological quantities derived from entanglement metrics can be used to classify
-            ground states of error correcting codes and graph states.</p>
+          <p>A recent line of research has emerged that attempts to characterize multipartite entanglement, a
+            generalization of bipartite entanglement, using tools from Topological Data Analysis (TDA). This allows us
+            to bring the powerful tools of homology to characterize entanglement among multiple subystems. The main
+            results of this paper are a connection between previous notions of "average bipartite entanglement" and the
+            integrated Euler characteristic, which is a homological quantity, as well as a characterization of
+            stabilizer states that are locally equivalent to GHZ states in terms of their topological fingerprint.</p>
         </li>
         <li>
-          <a href="https://arxiv.org/abs/2502.03410">The Thermodynamic Cost of Ignorance</a>
+          <a href="https://arxiv.org/abs/2502.03410">The Thermodynamic Cost of Ignorance: Thermal State Preparation with
+            One Ancilla Qubit</a>
           <p>
-            This paper expands upon previous models of thermalization used to prepare quantum thermal states to work for
-            arbitrary systems and temperatures.
+            This is my take on the problem of preparing thermal states on a quantum computer. Inspired by the classical
+            sampling algorithm called <a href="https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo">Hamiltonian Monte
+              Carlo</a>, this paper shows how coupling a system to a single ancilla qubit via a random matrix the
+            thermal state of the system can be prepared. This can be done even if one has no knowledge of the spectrum
+            of the system. Even further, we characterize the asymptotic runtime of this algorithm in the extreme
+            scenarios where one knows the system's spectrum completely and when one has no knowledge, which is where the
+            title comes from.
           </p>
         </li>
         <li>
-          <a href="https://arxiv.org/abs/2306.16572">Composite qdrift-product formulas for quantum and classical
-            simulations in real and imaginary time</a>
+          <a href="https://arxiv.org/abs/2306.16572">Composite QDrift Product Formulas for quantum and classical
+            imulations in real and imaginary time</a>
           <p>This paper extends previously developed composite or partially randomized simulation methods to imaginary
             time. This makes it a useful algorithm for classical Monte Carlo algorithms, which are traditionally based
-            on Trotter-Suzuki formulas.</p>
+            on Trotter-Suzuki formulas. This paper also constitutes the first numerical study for the empirical
+            improvements of Composite channels and we find that Trotter and QDrift channels can be 18x more expensive
+            than Composite methods for specific simulations.</p>
         </li>
         <li>
           <a href="https://arxiv.org/abs/2206.06409v3">Composite Quantum Simulations</a>
           <p>This paper combined randomized simulation techniques (QDrift) with deterministic techniques (Trotter
-            formulas) to reduce simulation costs for certain classes of Hamiltonians.</p>
+            formulas) to reduce simulation costs for Hamiltonians with strongly decaying terms.</p>
         </li>
       </ol>
     </section>
@@ -86,11 +105,8 @@
     <section id="software">
       <h1>Software</h1>
       <p>
-        I've been working on learning how to write software since I first tried to develop ROMs for my slow ass android
-        phone when I was a teen. This section is a great example that time spent doing something is not the only
-        important
-        metric and the quality of time spent practicing is just as important; as I only have the following packages that
-        are worth sharing with others. All libraries are in rust unless specified otherwise.
+        I've worked on a good chunk of code in my free time, below are some of the projects that have made it to a
+        presentable state. Each are in varying levels of progress.
       <ul id="software_libraries">
         <li>
           <a href="https://github.com/matthagan15/Trotter-Qdrift-Simulation">Trotter-Qdrift-Simulation</a> - A library
@@ -98,13 +114,15 @@
           benchmarking composite / partially randomized quantum simulations.
         </li>
         <li> <a href="https://github.com/matthagan15/mhgl">(MHGL)</a> Matt's HyperGraph Library - A library for working
-          with undirected hypergraphs that can compute boundaries, links, stars, and skeletons. Working on adding
+          with undirected hypergraphs that can compute boundaries, links, stars, and skeletons.Currently working on
+          adding
           homology algorithms and a simplex-tree datastructure. </li>
-        <li>SPARFF - Work in progress sparse linear algebra library over finite fields.</li>
         <li><a href="https://github.com/matthagan15/hdx_codec">HDX_CODEC</a> - Library developed to explore the error
           correcting codes developed in <a href="https://arxiv.org/pdf/2308.15563">New Codes on High Dimensional
             Expanders</a> and possible quantum
-          counterparts.</li>
+          counterparts. The most polished functionality it provides now is a breadth-first search traversal of the coset
+          complexes associated with finite field matrix groups.
+        </li>
       </ul>
       </p>
     </section>
