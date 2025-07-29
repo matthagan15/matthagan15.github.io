@@ -70,19 +70,23 @@
             to bring the powerful tools of homology to characterize entanglement among multiple subystems. The main
             results of this paper are a connection between previous notions of "average bipartite entanglement" and the
             integrated Euler characteristic, which is a homological quantity, as well as a characterization of
-            stabilizer states that are locally equivalent to GHZ states in terms of their topological fingerprint.</p>
+            stabilizer states that are locally equivalent to GHZ states in terms of their topological fingerprint. I'm
+            interested in taking these techniques and trying to apply them to product formula errors, tensor networks,
+            or systems with area laws. Another idea is to determine if good algorithms exist to detect homological
+            entanglement properties.</p>
         </li>
         <li>
           <a href="https://arxiv.org/abs/2502.03410">The Thermodynamic Cost of Ignorance: Thermal State Preparation with
             One Ancilla Qubit</a>
           <p>
-            This is my take on the problem of preparing thermal states on a quantum computer. Inspired by the classical
-            sampling algorithm called <a href="https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo">Hamiltonian Monte
-              Carlo</a>, this paper shows how coupling a system to a single ancilla qubit via a random matrix the
-            thermal state of the system can be prepared. This can be done even if one has no knowledge of the spectrum
-            of the system. Even further, we characterize the asymptotic runtime of this algorithm in the extreme
-            scenarios where one knows the system's spectrum completely and when one has no knowledge, which is where the
-            title comes from.
+            This is my take on the problem of preparing thermal states on a quantum computer. Inspired by the <a
+              href="https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo">Hamiltonian Monte
+              Carlo</a> classical
+            sampling algorithm, this paper shows how coupling a system to a single ancilla qubit via a random matrix can
+            lead to a thermal fixed point on the system. We do this by mapping the quantum dynamics to a classical
+            Markov chain over the systems eigenbasis. This can be done even if one has no knowledge of the spectrum
+            of the system and even further we can characterize the asymptotic runtime of this algorithm in the extreme
+            scenarios where one knows the system's spectrum completely and when one has no knowledge.
           </p>
         </li>
         <li>
@@ -121,7 +125,11 @@
           correcting codes developed in <a href="https://arxiv.org/pdf/2308.15563">New Codes on High Dimensional
             Expanders</a> and possible quantum
           counterparts. The most polished functionality it provides now is a breadth-first search traversal of the coset
-          complexes associated with finite field matrix groups.
+          complexes associated with finite field matrix groups. As this involves linear algebra over huge (millions of
+          rows and columns) and incredibly sparse (each row and column has at most ~3 nonzero entries) matrices, I am
+          currently working on spinning off the linear algebra functionality into it's own library. For instance, basic
+          gaussian implementation is anywhere from 4x to 300x faster in this library compared to the only comparable
+          python library <a href="https://mhostetter.github.io/galois/latest/">Galois</a>.
         </li>
       </ul>
       </p>
