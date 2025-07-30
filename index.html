@@ -142,7 +142,8 @@
           complexes associated with finite field matrix groups. As this involves linear algebra over huge (millions of
           rows and columns) and incredibly sparse (each row and column has at most ~3 nonzero entries) matrices, I am
           currently working on spinning off the linear algebra functionality into it's own library. For instance, basic
-          gaussian implementation is anywhere from 4x to 300x faster in this library compared to the only comparable
+          gaussian elimination to compute a reduced row-echelon form is anywhere from 4x to 300x faster (depending on
+          matrix size) in this library compared to the only comparable
           python library <a href="https://mhostetter.github.io/galois/latest/">Galois</a>.
         </li>
       </ul>
