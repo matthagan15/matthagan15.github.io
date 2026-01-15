@@ -11,6 +11,18 @@ img {
     align-content: center;
 }
 
+.typst-text {
+    fill: #FFFFFF;
+}
+
+.typst-frame {
+    fill: #FFFFFF;
+}
+
+g {
+    fill: #FFFFFF;
+}
+
 #profile_pic {
     width: 100%;
     align-items: center;
